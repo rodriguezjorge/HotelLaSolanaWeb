@@ -750,11 +750,22 @@ a {
   }
 
   .header::before {
-    opacity: 0.4;
+    opacity: 0.35;
   }
 
   .header::after {
-    opacity: 0.75;
+    opacity: 0.8;
+  }
+
+  /* En móvil usamos también la foto de lobby directamente en la tarjeta principal
+     para asegurar que se vea en la sección "Descubre la calma de La Solana". */
+  .hero__content {
+    background:
+      linear-gradient(180deg, rgba(5, 8, 17, 0.86), rgba(5, 8, 17, 0.96)),
+      url("./images/lobby_solana.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .hero__title {
