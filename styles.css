@@ -749,6 +749,14 @@ a {
     width: min(100% - 1.75rem, 640px);
   }
 
+  .header::before {
+    opacity: 0.4;
+  }
+
+  .header::after {
+    opacity: 0.75;
+  }
+
   .hero__title {
     font-size: 2.2rem;
   }
