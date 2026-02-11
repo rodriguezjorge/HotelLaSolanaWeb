@@ -63,9 +63,8 @@ a {
   inset: 0;
   background-image:
     radial-gradient(circle at 12% 10%, rgba(247, 166, 34, 0.24), transparent 55%),
-    radial-gradient(circle at 90% 12%, rgba(113, 182, 255, 0.3), transparent 55%),
-    linear-gradient(145deg, #050608 0%, #05060b 45%, #03040a 100%);
-  opacity: 0.9;
+    radial-gradient(circle at 90% 12%, rgba(113, 182, 255, 0.3), transparent 55%);
+  opacity: 0.7;
   z-index: -2;
 }
 
@@ -73,11 +72,11 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1600");
+  background-image: url("./images/lobby_solana.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0.32;
-  mix-blend-mode: soft-light;
+  opacity: 0.55;
+  mix-blend-mode: normal;
   z-index: -3;
 }
 
