@@ -53,6 +53,7 @@ a {
 .header {
   position: relative;
   min-height: 100vh;
+  padding-top: 5rem;
   color: var(--color-text);
   overflow: hidden;
 }
@@ -80,18 +81,20 @@ a {
 /* NAVBAR */
 
 .nav {
-  position: sticky;
-  top: 0;
-  z-index: 20;
+  position: fixed;
+  top: 0.5rem;
+  left: 0.75rem;
+  right: 0.75rem;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.25rem;
-  margin: 0.5rem 0.75rem;
   border-radius: var(--radius-lg);
   background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.06), transparent 55%),
     rgba(5, 8, 18, 0.92);
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.06);
   box-shadow: 0 18px 55px rgba(0, 0, 0, 0.7);
 }
