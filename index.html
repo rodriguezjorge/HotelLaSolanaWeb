@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel La Solana</title>
+  <meta name="description"
+    content="Hotel La Solana – Hotel tipo familiar y empresarial en Barquisimeto, Edo. Lara, Venezuela. Descubre nuestras habitaciones, servicios y realiza tu reserva.">
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header" id="inicio">
+    <nav class="nav">
+      <div class="nav__brand">
+        <img src="images/solana_social_logo.png" alt="Logo Hotel La Solana" class="nav__logo-img" />
+        <span class="nav__logo">Hotel La Solana</span>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#habitaciones">Habitaciones</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Escapada a la montaña</p>
+        <h1 class="hero__title">Descubre la calma de <span>La Solana</span></h1>
+        <p class="hero__subtitle">
+          Un hotel familiar, cálido y acogedor, rodeado de naturaleza. Despierta con vistas a la montaña y disfruta
+          de una estancia inolvidable.
+        </p>
+        <div class="hero__actions">
+          <a href="#contacto" class="btn btn--primary">Reservar estancia</a>
+          <a href="#galeria" class="btn btn--ghost">Ver galería</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sección: Sobre el hotel -->
+    <section class="section section--light" id="sobre">
+      <div class="container section__grid section__grid--2">
+        <div>
+          <h2 class="section__title">Un hotel con encanto</h2>
+          <p class="section__text">
+            El Hotel La Solana es un hotel tipo familiar y empresarial ubicado en Barquisimeto, Edo. Lara, Venezuela.
+            Cuidamos cada detalle para que tu estancia sea cómoda y especial, tanto si vienes por trabajo como por
+            descanso.
+          </p>
+          <p class="section__text">
+            Situados en la calle 51 entre carreras 21 y 22, al lado de la panadería Margarita, ofrecemos una ubicación
+            céntrica con fácil acceso a los principales puntos de la ciudad.
+          </p>
+        </div>
+        <div class="card card--image">
+          <div class="card__image card__image--about" aria-hidden="true"></div>
+          <div class="card__badge">
+            <span class="card__badge-title">Trato cercano</span>
+            <span class="card__badge-subtitle">Atención personalizada en cada reserva</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Habitaciones -->
+    <section class="section" id="habitaciones">
+      <div class="container">
+        <h2 class="section__title section__title--center">Habitaciones</h2>
+        <p class="section__subtitle section__subtitle--center">
+          Habitaciones luminosas y confortables, pensadas para descansar después de un día en la montaña.
+        </p>
+
+        <div class="cards cards--3">
+          <article class="card room-card">
+            <div class="room-card__image room-card__image--doble"></div>
+            <div class="card__body">
+              <h3 class="card__title">Habitación Doble</h3>
+              <p class="card__text">
+                Ideal para parejas. Cama doble, baño privado, calefacción y vistas al valle.
+              </p>
+              <ul class="chip-list">
+                <li class="chip">Cama doble</li>
+                <li class="chip">Baño privado</li>
+                <li class="chip">Desayuno incluido</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card room-card">
+            <div class="room-card__image room-card__image--familiar"></div>
+            <div class="card__body">
+              <h3 class="card__title">Habitación Familiar</h3>
+              <p class="card__text">
+                Espacio para toda la familia, con varias camas, zona de almacenaje y todo el confort necesario.
+              </p>
+              <ul class="chip-list">
+                <li class="chip">Hasta 4 personas</li>
+                <li class="chip">Cuna bajo petición</li>
+                <li class="chip">Vistas a la montaña</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card room-card">
+            <div class="room-card__image room-card__image--suite"></div>
+            <div class="card__body">
+              <h3 class="card__title">Suite Superior</h3>
+              <p class="card__text">
+                Para una escapada especial: más espacio, zona de estar y detalles pensados para sorprender.
+              </p>
+              <ul class="chip-list">
+                <li class="chip">Terraza privada</li>
+                <li class="chip">Amenities premium</li>
+                <li class="chip">Late check-out (según disponibilidad)</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Servicios -->
+    <section class="section section--accent" id="servicios">
+      <div class="container">
+        <h2 class="section__title section__title--center section__title--light">
+          Servicios pensados para ti
+        </h2>
+        <p class="section__subtitle section__subtitle--center section__subtitle--light">
+          Todo lo que necesitas para disfrutar de tu estancia en la montaña.
+        </p>
+
+        <div class="cards cards--3">
+          <article class="card card--service">
+            <span class="card__icon">☕</span>
+            <h3 class="card__title">Desayuno casero</h3>
+            <p class="card__text">
+              Productos locales, pan recién hecho y opciones dulces y saladas para empezar el día con energía.
+            </p>
+          </article>
+
+          <article class="card card--service">
+            <span class="card__icon">🗺️</span>
+            <h3 class="card__title">Asesoramiento de rutas</h3>
+            <p class="card__text">
+              Te ayudamos a elegir las mejores rutas de senderismo y actividades según tu nivel.
+            </p>
+          </article>
+
+          <article class="card card--service">
+            <span class="card__icon">📶</span>
+            <h3 class="card__title">Wi‑Fi gratuito</h3>
+            <p class="card__text">
+              Conexión disponible en todo el hotel para que puedas seguir conectado cuando lo necesites.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Galería -->
+    <section class="section section--light" id="galeria">
+      <div class="container">
+        <h2 class="section__title section__title--center">Galería</h2>
+        <p class="section__subtitle section__subtitle--center">
+          Algunas imágenes del hotel, las habitaciones y el entorno natural.
+        </p>
+
+        <div class="gallery">
+          <!-- Sustituye estas imágenes por tus fotos reales -->
+          <div class="gallery__item gallery__item--1"></div>
+          <div class="gallery__item gallery__item--2"></div>
+          <div class="gallery__item gallery__item--3"></div>
+          <div class="gallery__item gallery__item--4"></div>
+          <div class="gallery__item gallery__item--5"></div>
+          <div class="gallery__item gallery__item--6"></div>
+        </div>
+
+        <p class="gallery__note">
+          Puedes añadir más fotos o enlazar a tus redes sociales oficiales:
+          <a href="https://www.instagram.com/hotelsolana/" target="_blank" rel="noopener noreferrer">
+            Instagram
+          </a>
+          ·
+          <a href="https://www.facebook.com/hotelsolana/" target="_blank" rel="noopener noreferrer">
+            Facebook
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Sección: Ubicación -->
+    <section class="section" id="ubicacion">
+      <div class="container section__grid section__grid--2">
+        <div>
+          <h2 class="section__title">Dónde estamos</h2>
+          <p class="section__text">
+            Nos encontramos en Barquisimeto, Edo. Lara, Venezuela:
+          </p>
+          <ul class="list">
+            <li>Calle 51 entre carreras 21 y 22.</li>
+            <li>Al lado de la panadería Margarita.</li>
+            <li>Zona cómoda tanto para estancias familiares como empresariales.</li>
+          </ul>
+        </div>
+        <div class="map-wrapper">
+          <!-- Mapa incrustado apuntando a Hotel La Solana en Barquisimeto.
+               Si quieres el punto exacto, en Google Maps busca
+               "Hotel La Solana Barquisimeto" > Compartir > Insertar un mapa
+               y reemplaza la URL de src por la que te dé Google. -->
+          <iframe class="map" loading="lazy" allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Hotel+La+Solana,+Calle+51,+Barquisimeto,+Venezuela&output=embed">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Contacto -->
+    <section class="section section--light" id="contacto">
+      <div class="container section__grid section__grid--2">
+        <div>
+          <h2 class="section__title">Contacto y reservas</h2>
+          <p class="section__text">
+            Cuéntanos las fechas de tu viaje y el tipo de habitación que buscas. Te responderemos con la mejor opción
+            disponible.
+          </p>
+          <ul class="contact-list">
+            <li><strong>Teléfono:</strong> <a href="tel:+582514466325">+58 251-4466325</a></li>
+            <li><strong>Email:</strong> <a href="mailto:Hotelsolana@hotmail.com">Hotelsolana@hotmail.com</a></li>
+            <li><strong>Instagram:</strong>
+              <a href="https://www.instagram.com/hotelsolana/" target="_blank" rel="noopener noreferrer">@hotelsolana</a>
+            </li>
+            <li><strong>Facebook:</strong>
+              <a href="https://www.facebook.com/hotelsolana/" target="_blank" rel="noopener noreferrer">Hotel La Solana</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form" autocomplete="on">
+          <div class="form__group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+          </div>
+
+          <div class="form__group form__group--inline">
+            <div>
+              <label for="entrada">Fecha de entrada</label>
+              <input type="date" id="entrada" name="entrada" />
+            </div>
+            <div>
+              <label for="salida">Fecha de salida</label>
+              <input type="date" id="salida" name="salida" />
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label for="tipo">Tipo de habitación</label>
+            <select id="tipo" name="tipo">
+              <option value="">Selecciona una opción</option>
+              <option value="doble">Doble</option>
+              <option value="familiar">Familiar</option>
+              <option value="suite">Suite</option>
+            </select>
+          </div>
+
+          <div class="form__group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4"
+              placeholder="Cuéntanos cualquier detalle adicional (número de personas, niños, horarios aproximados...)"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">Enviar solicitud</button>
+
+          <p class="form__note">
+            Este formulario no envía correos automáticamente todavía. Puedes conectar este formulario con tu sistema
+            de reservas o email más adelante.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <p class="footer__logo">Hotel La Solana</p>
+      <p class="footer__text">
+        © <span id="year"></span> Hotel La Solana. Todos los derechos reservados.
+      </p>
+      <div class="footer__social">
+        <a class="footer__instagram" href="https://www.instagram.com/hotelsolana/" target="_blank"
+          rel="noopener noreferrer">
+          Instagram
+        </a>
+        <span>·</span>
+        <a class="footer__facebook" href="https://www.facebook.com/hotelsolana/" target="_blank"
+          rel="noopener noreferrer">
+          Facebook
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,13 @@
+{
+  "name": "hotellasolanaweb",
+  "version": "1.0.0",
+  "description": "Sitio web estático y responsivo para el Hotel La Solana.",
+  "private": true,
+  "scripts": {
+    "dev": "live-server ."
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
+
